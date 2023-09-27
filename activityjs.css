@@ -1,0 +1,41 @@
+.score_hide {
+  display: none;
+}
+
+.playArea {
+  display: none;
+}
+
+.loginArea {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rock {
+  height: 72px;
+  width: 72px;
+  border-radius: 50%;
+  background-image: url("rockicon.png");
+  background-size: 100%;
+  font-size: 0;
+}
+
+.paper {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-image: url("paper.png");
+  background-size: 100%;
+  font-size: 0;
+}
+
+.scissor {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-image: url("scissors.png");
+  background-size: 100%;
+  font-size: 0;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="activityjs.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="score_hide">
+        <div class="row">
+          <div class="col-12 d-flex">
+            <div class="col-4">
+              <div class="col-12">
+                <h2 class="text-center" id="userData">Sample</h2>
+                <h2 class="text-center" id="playername_Score">0</h2>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="col-12">
+                <h2 class="draw text-center">Draw</h2>
+                <h2 class="text-center" id="draw_Score">0</h2>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="col-12">
+                <h2 class="bot text-center">Bot</h2>
+                <h2 class="text-center" id="bot_Score">0</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="loginArea">
+        <div class="row login_page">
+          <div class="col-12 d-flex justify-content-center">
+            <div class="card" style="width: 50rem">
+              <img
+                class="card-img-top"
+                src="rockpaper.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-center">Enter your name to PLAY</h5>
+                <div class="col-12 d-flex justify-content-center">
+                  <div class="col-4">
+                    <input
+                      type="text"
+                      class="form-control mb-2"
+                      id="userName"
+                    />
+                  </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                  <button
+                    id="loginBtn"
+                    class="btn btn-primary"
+                    onclick="login();"
+                  >
+                    Login
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="playArea">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <div class="move">Choose your move</div>
+              <div class="movesleft">Moves Left: 10</div>
+              <div class="options">
+                <button class="rock">Rock</button>
+                <button class="paper">Paper</button>
+                <button class="scissor">Scissors</button>
+              </div>
+              <div class="result"></div>
+              <button class="reload"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="activityjs.js"></script>
+  </body>
+</html>
